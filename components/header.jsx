@@ -85,7 +85,7 @@ export default function Header() {
           </Unauthenticated>
         </div>
       </nav>
-      {isLoading && <BarLoader width={"100%"} color="#36d7b7" />}
+      {isLoading && <BarLoader width={"100%"} color="#00ca4b" />}
     </header>
   );
 }
