@@ -123,6 +123,66 @@ export default function LandingPage() {
       </section>
 
       {/* ───── Testimonials ───── */}
-      <section cl
+      <section className="bg-gray-50 py-20">
+        <div className="container mx-auto px-4 md:px-6 text-center">
+          <Badge variant="outline" className="bg-green-100 text-green-700">
+            Testimonials
+          </Badge>
+          <h2 className="gradient-title mt-2 text-3xl md:text-4xl">
+            What our users are saying
+          </h2>
+
+          <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {TESTIMONIALS.map(({ quote, name, role, image }) => (
+              <Card key={name} className="flex flex-col justify-between">
+                <CardContent className="space-y-4 p-6">
+                  <p className="text-gray-500">{quote}</p>
+                  <div className="flex items-center space-x-3">
+                    <Avatar>
+                      {/* Placeholder avatar */}
+                      <AvatarImage src={image} alt={name} />
+                      <AvatarFallback className="uppercase">
+                        {name.charAt(0)}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="text-left">
+                      <p className="text-sm font-medium">{name}</p>
+                      <p className="text-sm text-muted-foreground">{role}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ───── Call‑to‑Action ───── */}
+      <section className="py-20 gradient">
+        <div className="container mx-auto px-4 md:px-6 text-center space-y-6">
+          <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl text-white">
+            Ready to simplify expense sharing?
+          </h2>
+          <p className="mx-auto max-w-[600px] text-green-100 md:text-xl/relaxed">
+            Join thousands of users who have made splitting expenses
+            stress‑free.
+          </p>
+          <Button asChild size="lg" className="bg-green-800 hover:opacity-90">
+            <Link href="/dashboard">
+              Get Started
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      {/* ───── Footer ───── */}
+      <footer className="border-t bg-gray-50 py-12 text-center text-sm text-muted-foreground">
+        © {new Date().getFullYear()}<span className="text-emerald-400 font-bold"> Splitr</span>. All rights
+            reserved.
+
+          <p className="mt-2 text-sm">Powered by artificial intelligence • Built for the future</p>
+      </footer>
+    </div>
   );
 }
