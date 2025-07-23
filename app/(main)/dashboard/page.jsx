@@ -1,20 +1,21 @@
 "use client";
 
 import { api } from "@/convex/_generated/api";
-
 import { BarLoader } from "react-spinners";
 import {
   Card,
   CardContent,
+  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PlusCircle, Users, CreditCard, ChevronRight } from "lucide-react";
 import Link from "next/link";
-import { ExpenseSummary } from "./_components/expense-summary";
-import { BalanceSummary } from "./_components/balance-summary";
 import { useConvexQuery } from "@/app/hooks/use-convex-query";
+import { GroupList } from "./_components/group-list";
+import { BalanceSummary } from "./_components/balance-summary";
+import { ExpenseSummary } from "./_components/expense-summary";
 
 export default function Dashboard() {
   const { data: balances, isLoading: balancesLoading } = useConvexQuery(
@@ -163,7 +164,31 @@ export default function Dashboard() {
                 </CardContent>
               </Card>
 
-
+              {/* Groups */}
+              <Card>
+                <CardHeader className="pb-3">
+                  <div className="flex items-center justify-between">
+                    <CardTitle>Your Groups</CardTitle>
+                    <Button variant="link" asChild className="p-0">
+                      <Link href="/contacts">
+                        View all
+                        <ChevronRight className="ml-1 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <GroupList groups={groups} />
+                </CardContent>
+                <CardFooter>
+                  <Button variant="outline" asChild className="w-full">
+                    <Link href="/contacts?createGroup=true">
+                      <Users className="mr-2 h-4 w-4" />
+                      Create new group
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
             </div>
           </div>
         </>
