@@ -1,13 +1,13 @@
 "use client";
 
-
+import { useState } from "react";
+import { useConvexQuery } from "@/hooks/use-convex-query";
+import { api } from "@/convex/_generated/api";
 import { format } from "date-fns";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowLeftRight } from "lucide-react";
-import { useConvexQuery } from "@/app/hooks/use-convex-query";
-import { api } from "@/convex/_generated/api";
-
+import Link from "next/link";
 
 export function SettlementList({
   settlements,

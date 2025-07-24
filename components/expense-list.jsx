@@ -1,7 +1,6 @@
 "use client";
 
 
-import { api } from "@/convex/_generated/api";
 import { format } from "date-fns";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -12,6 +11,7 @@ import { Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { useConvexMutation, useConvexQuery } from "@/app/hooks/use-convex-query";
+import { api } from "@/convex/_generated/api";
 
 export function ExpenseList({
   expenses,
