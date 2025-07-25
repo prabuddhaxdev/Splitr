@@ -1,4 +1,5 @@
 🚀 Splitr – The Smart Way to Split Expenses
+
 Splitr is a simple, intuitive app that helps roommates, couples, and groups manage shared expenses without awkward money talks. Whether it’s groceries, rent, or weekend getaways, SplitBuddy keeps track of who paid what, who owes whom, and makes settling up a breeze.
 
 Built with a focus on clean UI and seamless experience, SplitBuddy offers:
