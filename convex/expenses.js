@@ -66,6 +66,7 @@ export const createExpense = mutation({
   },
 });
 
+
 // ----------- Expenses Page -----------
 
 // Get expenses between current user and a specific person
