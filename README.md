@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🚀 Splitr – The Smart Way to Split Expenses
+Splitr is a simple, intuitive app that helps roommates, couples, and groups manage shared expenses without awkward money talks. Whether it’s groceries, rent, or weekend getaways, SplitBuddy keeps track of who paid what, who owes whom, and makes settling up a breeze.
 
-## Getting Started
+Built with a focus on clean UI and seamless experience, SplitBuddy offers:
 
-First, run the development server:
+💸 Real-time expense tracking
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🛒 Grocery list & shared items management
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🧾 Bill splitting with automatic balance calculation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+👫 Group support for multiple friends/flatmates
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📊 Dashboard to visualize shared spending habits
 
-## Learn More
+🔔 Smart reminders for pending payments
 
-To learn more about Next.js, take a look at the following resources:
+🧠 AI-generated monthly email summaries so you always know where your money went
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Whether you're living with roommates or sharing costs with your partner, SplitBuddy ensures transparency, clarity, and peace of mind.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Stack: Next.js · Tailwind CSS · React · Convex · Shadcn/ui · Inngest · JavasScript
