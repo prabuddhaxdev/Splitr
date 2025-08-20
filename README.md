@@ -9,8 +9,6 @@ Built with a focus on clean UI and seamless experience, Splitr offers:
 
 💸 Real-time expense tracking
 
-🛒 Grocery list & shared items management
-
 🧾 Bill splitting with automatic balance calculation
 
 👫 Group support for multiple friends/flatmates
